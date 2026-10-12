@@ -159,7 +159,220 @@
     }
   ],
   "actorBlocksMap": {
-    "actor_1": {},
+    "actor_1": {
+      "inst_32": {
+        "instanceId": "inst_32",
+        "blockDefId": "start",
+        "x": 131,
+        "y": 91,
+        "inputValues": {},
+        "parent": null,
+        "parentSlot": null,
+        "next": "inst_33",
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 1
+      },
+      "inst_33": {
+        "instanceId": "inst_33",
+        "blockDefId": "forever",
+        "x": 131,
+        "y": 159,
+        "inputValues": {},
+        "parent": "inst_32",
+        "parentSlot": "next",
+        "next": null,
+        "inside1": "inst_40",
+        "inside2": null,
+        "condition": null,
+        "zOrder": 2
+      },
+      "inst_34": {
+        "instanceId": "inst_34",
+        "blockDefId": "if",
+        "x": 147,
+        "y": 207,
+        "inputValues": {},
+        "parent": "inst_41",
+        "parentSlot": "next",
+        "next": "inst_37",
+        "inside1": "inst_36",
+        "inside2": null,
+        "condition": "inst_35",
+        "zOrder": 3
+      },
+      "inst_35": {
+        "instanceId": "inst_35",
+        "blockDefId": "key-pressed",
+        "x": 187,
+        "y": 217,
+        "inputValues": {
+          "key": "ArrowRight"
+        },
+        "parent": "inst_34",
+        "parentSlot": "condition",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 4
+      },
+      "inst_36": {
+        "instanceId": "inst_36",
+        "blockDefId": "add-x",
+        "x": 163,
+        "y": 255,
+        "inputValues": {
+          "value": "5"
+        },
+        "parent": "inst_34",
+        "parentSlot": "inside1",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 5
+      },
+      "inst_37": {
+        "instanceId": "inst_37",
+        "blockDefId": "if",
+        "x": 155,
+        "y": 242,
+        "inputValues": {},
+        "parent": "inst_34",
+        "parentSlot": "next",
+        "next": null,
+        "inside1": "inst_38",
+        "inside2": null,
+        "condition": "inst_39",
+        "zOrder": 6
+      },
+      "inst_38": {
+        "instanceId": "inst_38",
+        "blockDefId": "add-x",
+        "x": 171,
+        "y": 290,
+        "inputValues": {
+          "value": "-5"
+        },
+        "parent": "inst_37",
+        "parentSlot": "inside1",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 6
+      },
+      "inst_39": {
+        "instanceId": "inst_39",
+        "blockDefId": "key-pressed",
+        "x": 195,
+        "y": 252,
+        "inputValues": {
+          "key": "ArrowLeft"
+        },
+        "parent": "inst_37",
+        "parentSlot": "condition",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 6
+      },
+      "inst_40": {
+        "instanceId": "inst_40",
+        "blockDefId": "if",
+        "x": 140,
+        "y": 247,
+        "inputValues": {},
+        "parent": "inst_33",
+        "parentSlot": "inside1",
+        "next": "inst_41",
+        "inside1": "inst_46",
+        "inside2": null,
+        "condition": "inst_45",
+        "zOrder": 7
+      },
+      "inst_41": {
+        "instanceId": "inst_41",
+        "blockDefId": "if",
+        "x": 140,
+        "y": 369,
+        "inputValues": {},
+        "parent": "inst_40",
+        "parentSlot": "next",
+        "next": "inst_34",
+        "inside1": "inst_47",
+        "inside2": null,
+        "condition": "inst_43",
+        "zOrder": 7
+      },
+      "inst_43": {
+        "instanceId": "inst_43",
+        "blockDefId": "key-pressed",
+        "x": 180,
+        "y": 379,
+        "inputValues": {
+          "key": "ArrowDown"
+        },
+        "parent": "inst_41",
+        "parentSlot": "condition",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 7
+      },
+      "inst_45": {
+        "instanceId": "inst_45",
+        "blockDefId": "key-pressed",
+        "x": 180,
+        "y": 257,
+        "inputValues": {
+          "key": "ArrowUp"
+        },
+        "parent": "inst_40",
+        "parentSlot": "condition",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 7
+      },
+      "inst_46": {
+        "instanceId": "inst_46",
+        "blockDefId": "add-y",
+        "x": 163,
+        "y": 255,
+        "inputValues": {
+          "value": "5"
+        },
+        "parent": "inst_40",
+        "parentSlot": "inside1",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 9
+      },
+      "inst_47": {
+        "instanceId": "inst_47",
+        "blockDefId": "add-y",
+        "x": 152,
+        "y": 288,
+        "inputValues": {
+          "value": "-5"
+        },
+        "parent": "inst_41",
+        "parentSlot": "inside1",
+        "next": null,
+        "inside1": null,
+        "inside2": null,
+        "condition": null,
+        "zOrder": 10
+      }
+    },
     "background": {},
     "__camera__": {},
     "__light_ambient__": {},
@@ -293,7 +506,12 @@
     "pitch": 0,
     "fov": 1.0471975511965976,
     "projection": "orthographic",
-    "orthoSize": 360
+    "orthoSize": 360,
+    "followOffset": {
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
   },
   "scenes": [
     {
