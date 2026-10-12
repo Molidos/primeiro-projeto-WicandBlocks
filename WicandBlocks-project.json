@@ -1,0 +1,307 @@
+{
+  "version": 4,
+  "actors": [
+    {
+      "id": "background",
+      "name": "Cenário",
+      "color": "#4682B4",
+      "isBackground": true,
+      "lockedEdit": false,
+      "sceneId": "scene_main",
+      "costumes": [
+        {
+          "id": "backdrop_default",
+          "name": "pano de fundo 1",
+          "dataUrl": "asset://assets/Cenário/pano_de_fundo_1.svg"
+        }
+      ],
+      "activeCostumeId": "backdrop_default",
+      "initialX": 0,
+      "initialY": 0,
+      "initialZ": 0,
+      "initialSize": 100,
+      "initialDirection": 90
+    },
+    {
+      "id": "__camera__",
+      "name": "Câmera",
+      "color": "#a855f7",
+      "actorKind": "camera",
+      "isMainCamera": true,
+      "lockedDelete": true,
+      "lockedEdit": false,
+      "costumes": [
+        {
+          "id": "camera_icon",
+          "name": "câmera",
+          "dataUrl": "asset://assets/Câmera/câmera.svg"
+        }
+      ],
+      "activeCostumeId": "camera_icon",
+      "initialX": 0,
+      "initialY": 0,
+      "initialZ": -600,
+      "initialDirection": 90,
+      "initialVisible": false,
+      "sceneId": "scene_main"
+    },
+    {
+      "id": "__scene__",
+      "name": "Cenário 3D",
+      "color": "#34d399",
+      "actorKind": "scene",
+      "lockedDelete": true,
+      "lockedEdit": true,
+      "costumes": [
+        {
+          "id": "scene_icon",
+          "name": "cenário",
+          "dataUrl": "asset://assets/Cenário_3D/cenário.svg"
+        }
+      ],
+      "activeCostumeId": "scene_icon",
+      "initialVisible": false,
+      "sceneGravity": -9.81,
+      "sceneAmbientColor": "#404040",
+      "sceneAmbientIntensity": 1,
+      "sceneHdriAffectsLighting": true,
+      "sceneHdriIntensity": 1,
+      "sceneId": "scene_main"
+    },
+    {
+      "id": "__light_ambient__",
+      "name": "Luz Ambiente",
+      "color": "#fde047",
+      "actorKind": "light",
+      "lockedDelete": false,
+      "lockedEdit": false,
+      "costumes": [
+        {
+          "id": "__light_ambient___icon",
+          "name": "luz",
+          "dataUrl": "asset://assets/Luz_Ambiente/luz.svg"
+        }
+      ],
+      "activeCostumeId": "__light_ambient___icon",
+      "initialX": -70,
+      "initialY": 120,
+      "initialZ": 0,
+      "initialDirection": 90,
+      "initialYaw3d": 0,
+      "initialPitch3d": -90,
+      "initialRoll3d": 0,
+      "initialVisible": false,
+      "lightType": "hemispheric",
+      "lightColor": "#ffffff",
+      "lightIntensity": 1.3,
+      "lightDirection": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "lightSpotAngle": 45,
+      "lightRange": 1000,
+      "lightRadius": 0,
+      "lightGroundColor": "#222266",
+      "sceneId": "scene_main"
+    },
+    {
+      "id": "__light_directional__",
+      "name": "Luz Direcional",
+      "color": "#fde047",
+      "actorKind": "light",
+      "lockedDelete": false,
+      "lockedEdit": false,
+      "costumes": [
+        {
+          "id": "__light_directional___icon",
+          "name": "luz",
+          "dataUrl": "asset://assets/Luz_Direcional/luz.svg"
+        }
+      ],
+      "activeCostumeId": "__light_directional___icon",
+      "initialX": 70,
+      "initialY": 120,
+      "initialZ": 0,
+      "initialDirection": 90,
+      "initialYaw3d": 35,
+      "initialPitch3d": 55,
+      "initialRoll3d": 0,
+      "initialVisible": false,
+      "lightType": "directional",
+      "lightColor": "#ffffff",
+      "lightIntensity": 0.6,
+      "lightDirection": {
+        "x": 0,
+        "y": -1,
+        "z": 0
+      },
+      "lightSpotAngle": 45,
+      "lightRange": 1000,
+      "lightRadius": 0,
+      "lightGroundColor": "#222266",
+      "sceneId": "scene_main"
+    },
+    {
+      "id": "actor_1",
+      "name": "Ator 1",
+      "color": "#4CAF50",
+      "costumes": [
+        {
+          "id": "costume_1791845656641",
+          "name": "padrão",
+          "dataUrl": "asset://assets/Ator_1/padrão.svg"
+        }
+      ],
+      "activeCostumeId": "costume_1791845656641",
+      "sceneId": "scene_main",
+      "initialZ": 50
+    }
+  ],
+  "actorBlocksMap": {
+    "actor_1": {},
+    "background": {},
+    "__camera__": {},
+    "__light_ambient__": {},
+    "__light_directional__": {},
+    "__scene__": {}
+  },
+  "actorGroupsMap": {},
+  "activeActorId": "actor_1",
+  "workspace": {
+    "paneTree": {
+      "type": "split",
+      "id": "pane_152",
+      "direction": "row",
+      "ratio": 0.15,
+      "children": [
+        {
+          "type": "leaf",
+          "id": "pane_153",
+          "moduleType": "palette"
+        },
+        {
+          "type": "split",
+          "id": "pane_154",
+          "direction": "row",
+          "ratio": 0.6,
+          "children": [
+            {
+              "type": "split",
+              "id": "pane_155",
+              "direction": "col",
+              "ratio": 0.78,
+              "children": [
+                {
+                  "type": "leaf",
+                  "id": "pane_156",
+                  "moduleType": "canvas"
+                },
+                {
+                  "type": "leaf",
+                  "id": "pane_157",
+                  "moduleType": "actors"
+                }
+              ]
+            },
+            {
+              "type": "split",
+              "id": "pane_158",
+              "direction": "col",
+              "ratio": 0.5,
+              "children": [
+                {
+                  "type": "leaf",
+                  "id": "pane_159",
+                  "moduleType": "stage"
+                },
+                {
+                  "type": "leaf",
+                  "id": "pane_160",
+                  "moduleType": "code"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "actorsViewMode": "default",
+    "selectedStructuralFile": null,
+    "structuralOverrides": {
+      ".gitignore": "# Snapshot local do editor (o manifesto Git é WicandBlocks-project.json)\nprojeto.wicandblocks.zip\nprojeto.scratch.zip\n\n# Modelos 3D (arquivos grandes)\nassets/**/*.glb\nassets/**/*.gltf\n\n# Audio\nassets/**/*.mp3\nassets/**/*.wav\nassets/**/*.ogg\n\n# Sistema\n.DS_Store\nThumbs.db\n"
+    },
+    "activeModuleId": "core",
+    "canvasMode": "block",
+    "importedPacks": [],
+    "runtimeOverrides": {},
+    "terminalProfiles": [
+      {
+        "id": "powershell",
+        "name": "PowerShell",
+        "shell": "powershell",
+        "command": "powershell.exe",
+        "args": [
+          "-NoLogo",
+          "-ExecutionPolicy",
+          "Bypass"
+        ]
+      },
+      {
+        "id": "cmd",
+        "name": "CMD",
+        "shell": "cmd",
+        "command": "cmd.exe",
+        "args": []
+      },
+      {
+        "id": "bash",
+        "name": "Bash",
+        "shell": "bash",
+        "command": "bash",
+        "args": [
+          "-i"
+        ]
+      }
+    ],
+    "defaultTerminalProfileId": "powershell",
+    "terminalTabsByPane": {},
+    "activeTerminalTabIdByPane": {},
+    "selectedRenderByModule": {},
+    "renderSettings": {
+      "width": 480,
+      "height": 360,
+      "fps": 60,
+      "aspectRatio": "4:3",
+      "scalingMode": "native",
+      "shadingEnabled": true,
+      "shadowsEnabled": true,
+      "shadowQuality": "medium"
+    }
+  },
+  "hiddenActorIds": [
+    "__camera__",
+    "__scene__",
+    "__light_ambient__",
+    "__light_directional__"
+  ],
+  "sceneCamera": {
+    "x": 0,
+    "y": 0,
+    "z": -600,
+    "yaw": 3.141592653589793,
+    "pitch": 0,
+    "fov": 1.0471975511965976,
+    "projection": "orthographic",
+    "orthoSize": 360
+  },
+  "scenes": [
+    {
+      "id": "scene_main",
+      "name": "Principal",
+      "isStartup": true,
+      "color": "#7c3aed"
+    }
+  ],
+  "activeSceneId": "scene_main"
+}
